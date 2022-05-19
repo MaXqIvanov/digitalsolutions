@@ -129,8 +129,109 @@ line-height: 60px;
 
 // ViewProfile 
 .block_info{
+  padding-top: 20px;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  color: #000000;
+  font-family: Alegreya Sans SC;
+}
+.block_info_wrap{
+    height: 100%;
+    width: 90%;
+}
+.block_info_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// CardsUsers
+.wrap_cards{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 1.33%;
+
+    @media(max-width:1090px){
+        grid-template-columns: 32.5% 32.5% 32.5%;
+        column-gap: 2.5%;
+    }
+    @media(max-width:800px){
+        grid-template-columns: 49% 49%;
+        column-gap: 1%;
+    }
+    @media(max-width:550px){
+        grid-template-columns: 100%;
+    }
+    margin-bottom: 16px;
+}
+.cards_users_block{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards_users{
+    margin-top: 16px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    height: 143px;
+    width: 239px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cards_users_wrap{
+    height: 90%;
+    width: 90%;
+    position: relative;
+}
+.div_text1{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+
+    span{
+        font-size: 35px;
+    }
+}
+.div_text_number{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+
+    span{
+        color: rgb(185, 184, 184);
+    }
+}
+.cards_button_profile{
+    position: absolute;
+    left: 3px;
+    bottom: 5px;
+    height: 35px;
+    width: 148px;
+    color: white;
+    padding: 10px, 20px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0D1E4B;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    span{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-transform: capitalize;
+
+    }
 }
