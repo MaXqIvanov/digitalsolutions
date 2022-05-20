@@ -27,9 +27,7 @@ export const ViewProfile = () => {
             dispatch(changeVision(newValue))
         }
     }
-    console.log('====================================');
-    console.log(numb);
-    console.log('====================================');
+
   return (
     <div className={s.block_info}>
         <div className={s.block_info_wrap}>
@@ -43,10 +41,10 @@ export const ViewProfile = () => {
                 : <div>билеты ещё никто не купил</div>} 
                 <div onClick={()=>{
                     change_users(1)
-                    }} className={s.next_users +'btn btn-primary'}>+</div>
+                    }} className={s.next_users}></div>
                 <div onClick={()=>{
                     change_users(-1)
-                    }} className={s.previous}>-</div>
+                    }} className={s.previous}></div>
            </div>
         </div>
     </div>

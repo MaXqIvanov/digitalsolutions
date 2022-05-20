@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { InfoView } from '../components/home_page/InfoView'
 import { ViewProfile } from '../components/home_page/ViewProfile'
 import s from '../scss/homePage.module.scss'
 
@@ -27,6 +28,7 @@ export const HomePage = () => {
             </div>
         </div>
         <ViewProfile />
+        <InfoView />
     </div>
   )
 }
