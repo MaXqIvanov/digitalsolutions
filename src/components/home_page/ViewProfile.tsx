@@ -1,8 +1,6 @@
-
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { changeVision, getUsers } from '../../redux/usersSlice'
+import { changeVision } from '../../redux/usersSlice'
 import s from '../../scss/homePage.module.scss'
 import { CardUsers } from './CardUsers'
 
@@ -11,12 +9,6 @@ export const ViewProfile = () => {
     const [numb, setNumb] = useState(0);
     const users = useSelector((state:any)=> state.users.users)
     const {limit} = useSelector((state:any)=> state.users)
-    useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/users').then((data:any)=>
-        dispatch(getUsers(data.data))
-        )
-
-    }, [])
 
     const change_users = (value:number)=> {
         if(numb <= limit && numb >= 0) {

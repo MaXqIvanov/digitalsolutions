@@ -1,0 +1,383 @@
+$black_boder: 1px solid black;
+.main{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 659px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    border: $black_boder;
+    color: black;
+}
+
+.block_user{
+    height: 108px;
+    width: 100%;
+    border-bottom: $black_boder;
+    box-sizing: border-box;
+    @media(max-width:1000px){
+        height: 140px;
+    }
+    @media(max-width:750px){
+        height: 210px;
+    }
+}
+.block_user_topLine{
+    border-bottom: $black_boder;
+    box-sizing: border-box;
+    height: 63px;
+    width: 100%;
+}
+.block_user_name{
+    margin-left: 53px;
+    margin-right: 62px;
+    height: 100%;
+    width: auto;
+    border-left: $black_boder;
+    border-right: $black_boder;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+
+    @media(max-width:750px){
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+    }
+}
+.block_user_bottomLine{
+    height: 44px;
+    width: 100%;
+    @media(max-width:1000px){
+        height: 77px;
+    }
+    @media(max-width:750px){
+        height: 146px;
+    }
+}
+.block_user_bottomLine_main{
+    margin-left: 53px;
+    margin-right: 62px;
+    border-left: $black_boder;
+    border-right: $black_boder;
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto 176px 247px;
+
+    @media(max-width:1000px){
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    @media(max-width: 750px){
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+}
+.block_user_city{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    @media(max-width: 1000px){
+       border-bottom: $black_boder;
+    }
+    @media(max-width:750px){
+        border-bottom: 0px !important;
+    }
+}
+
+.block_user_mail{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    @media(max-width:750px){
+        border-left: 0px !important;
+        border-right: 0px !important;
+        border-bottom: $black_boder;
+        border-top: $black_boder;
+    }
+    @media(max-width: 1000px){
+        border-bottom: $black_boder;
+    }
+}
+.block_user_phone{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    @media(max-width: 1000px){
+        border-bottom: $black_boder;
+    }
+}
+.block_user_site{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: $black_boder;
+    border-right: $black_boder;
+    @media(max-width: 1000px){
+      border-left: 0px !important;
+    }
+    @media(max-width:750px){
+        border-right: 0px !important;
+        border-bottom: $black_boder;
+    }
+}
+.block_user_company{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    @media(max-width: 1000px){
+        border-right: $black_boder;
+    }
+    @media(max-width:750px){
+        border-right: 0px !important;
+        font-size: 16px;
+    }
+}
+.buttons_user{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;    
+}
+.block_user_button_write{
+    background: #101010;
+    border: 1px solid #0D1E4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 176px;
+    height: 44px;
+    span{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        color: #FFFFFF;
+    }
+}
+.block_user_button_offer{
+    background: #101010;
+    border: 1px solid #0D1E4B;
+    border-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 247px;
+    height: 44px;
+    span{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        color: #FFFFFF;
+    }
+}
+.block_user_mail{
+    border-left: $black_boder;
+    border-right: $black_boder;
+}
+.block_posts{
+    margin-top: 75px;
+    border-top: $black_boder;
+    height: 257px;
+    border-bottom: $black_boder;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media(max-width:750px){
+        height: 100%;
+        min-height: 457px;
+    }
+}
+.block_posts_title{ 
+    position: absolute;
+    top: 16px;
+    left: 53px;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+}
+.block_posts_post{
+    position: absolute;
+    top: 71px;
+    width: 90%;
+    height: 143px;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+
+    @media(max-width:750px){
+        grid-template-columns: 100%;
+        height: 326px;
+    }
+}
+.templatePost{
+    border: $black_boder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.templatePost_wrap{
+    height: 90%;
+    width: 90%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+    text-align: start;
+    position: relative;
+}
+.post_body{
+    position: absolute;
+    top: 50%;
+    height: 12px;
+    overflow: hidden;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+}
+.post_more{
+    position: absolute;
+    top: 60%;
+}
+.view_allPosts{
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: red;
+    width: fit-content;
+    background: #101010;
+    border: 1px solid #0D1E4B;
+    border-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 247px;
+    height: 30px;
+    span{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        color: #FFFFFF;
+    }
+    @media(max-width:630px){
+        bottom: -45px;
+    }
+}
+
+
+
+.block_publications{
+    height: 100%;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.block_publications_wrap{
+    height: 90%;
+    width: 90%;
+}
+.block_pub_title{
+    position: absolute;
+    top: 16px;
+    left: 53px;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+}
+.block_pub_rect{
+    margin-top: 25px;
+    height: 154px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 154px 154px 154px 154px 154px 154px;
+    column-gap: 15.4px;
+    overflow-x: hidden;
+}
+.rect1{
+    background: #63B4EE;
+}
+.rect2{
+    background: #2B9FF2;
+}
+.rect3{
+    background: #547FED;
+}
+.rect4{
+    background: #4366E1;
+}
+.rect5{
+    background: #2040B0;
+}
+.rect6{
+    background: #0C257C;
+}
