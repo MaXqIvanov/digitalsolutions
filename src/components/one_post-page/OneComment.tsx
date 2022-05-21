@@ -1,6 +1,5 @@
-
-import React from 'react'
-import s from '../../scss/onePostPage.module.scss'
+import React from 'react';
+import s from '../../scss/onePostPage.module.scss';
 export const OneComment = ({ comment }: any) => {
   return (
     <div className={s.main_comment}>
@@ -10,5 +9,5 @@ export const OneComment = ({ comment }: any) => {
         <div className={s.comment_body}>{comment.body}</div>
       </div>
     </div>
-  )
-}
+  );
+};

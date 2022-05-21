@@ -10,21 +10,20 @@ const postsSlice = createSlice({
     comments: [] as any[],
   },
   reducers: {
-    getPosts(state:any, action:any) {
-        state.postHidden = action.payload
-        state.posts = action.payload.slice(0,3)
-        state.limitPosts = action.payload.length - 3
+    getPosts(state: any, action: any) {
+      state.postHidden = action.payload;
+      state.posts = action.payload.slice(0, 3);
+      state.limitPosts = action.payload.length - 3;
     },
-    getOnePost(state:any, action:any) {
-      state.onePost = action.payload
+    getOnePost(state: any, action: any) {
+      state.onePost = action.payload;
     },
-    getComments(state:any, action:any){
-      state.comments = action.payload
+    getComments(state: any, action: any) {
+      state.comments = action.payload;
     },
-    addComments(state:any, action:any){
-      state.comments = [...state.comments, action.payload]
-    }
-   
+    addComments(state: any, action: any) {
+      state.comments = [...state.comments, action.payload];
+    },
   },
 });
 

@@ -10,22 +10,22 @@ const usersSlice = createSlice({
     user: {} as any,
   },
   reducers: {
-    getUsers(state:any, action:any) {
+    getUsers(state: any, action: any) {
       state.usersHidden = action.payload;
-      state.users = action.payload.slice(0,4)
-      state.limit = action.payload.length - 4
-      state.loadData = true
+      state.users = action.payload.slice(0, 4);
+      state.limit = action.payload.length - 4;
+      state.loadData = true;
     },
-    changeVision(state:any, action:any){
-      state.users = state.usersHidden.slice(action.payload, (action.payload + 4))
+    changeVision(state: any, action: any) {
+      state.users = state.usersHidden.slice(action.payload, action.payload + 4);
     },
-    setUser(state:any, action:any){
-      state.user = action.payload
+    setUser(state: any, action: any) {
+      state.user = action.payload;
     },
-    setUserReload(state:any, action:any){
-      if(state.loadData === true) {
-        state.user = state.usersHidden.filter((elem:any)=> elem.id === Number(action.payload))[0]
-      }      
+    setUserReload(state: any, action: any) {
+      if (state.loadData === true) {
+        state.user = state.usersHidden.filter((elem: any) => elem.id === Number(action.payload))[0];
+      }
     },
   },
 });

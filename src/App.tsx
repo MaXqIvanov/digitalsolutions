@@ -13,11 +13,10 @@ import { OnePostPage } from './pages/OnePostPage';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/users').then((data:any)=>
-    dispatch(getUsers(data.data))
-    )
-
-}, [])
+    axios
+      .get('https://jsonplaceholder.typicode.com/users')
+      .then((data: any) => dispatch(getUsers(data.data)));
+  }, []);
   return (
     <div className="App">
       <Routes>
@@ -39,7 +38,7 @@ function App() {
             </div>
           }
         />
-         <Route
+        <Route
           path="/posts"
           element={
             <div className="template_pages">
@@ -49,7 +48,7 @@ function App() {
           }
         />
 
-          <Route
+        <Route
           path="/posts/:id"
           element={
             <div className="template_pages">
@@ -59,7 +58,6 @@ function App() {
           }
         />
       </Routes>
-
     </div>
   );
 }
