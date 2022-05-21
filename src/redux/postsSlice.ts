@@ -20,10 +20,13 @@ const postsSlice = createSlice({
     },
     getComments(state:any, action:any){
       state.comments = action.payload
+    },
+    addComments(state:any, action:any){
+      state.comments = [...state.comments, action.payload]
     }
    
   },
 });
 
 export default postsSlice.reducer;
-export const { getPosts, getOnePost, getComments } = postsSlice.actions;
+export const { getPosts, getOnePost, getComments, addComments } = postsSlice.actions;

@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     text-align: start;
+    padding-bottom: 10px;
     span{
         width: 90%;
         font-family: 'Open Sans';
@@ -84,4 +85,133 @@
 .main_comment{
     margin: 10px;
     box-shadow: 0px 0px 3px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_comment_wrap{
+    width: 95%;
+    height: 90%;
+    text-align: start;
+}
+.comment_name{
+    margin-top: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+  
+}
+.comment_email{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    /* or 142% */
+    color: rgba(0, 0, 0, 0.51);
+}
+.comment_body{
+    padding-bottom: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* or 142% */
+    color: rgba(0, 0, 0, 0.81);
+}
+.comment_block_btn{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.comment_button{
+    width: 100%;
+    background: #101010;
+    border: 1px solid #0D1E4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 176px;
+    height: 34px;
+    span{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        color: #FFFFFF;
+    }
+}
+
+
+//form
+.main_form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    min-height: 50vh;
+    width: 50vw;
+    @media(max-width:630px){
+        width: 90vw;
+        height: fit-content;
+        min-height: 50vh;
+    }
+}
+.main_form_wrap{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 5px rgb(134, 134, 134);
+    background: rgb(207, 207, 207);
+    display: flex;
+    justify-content: center;
+}
+.close_button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
+    background-image: url('../images/close_btn.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.form{
+    padding-top: 20px;
+    width: 90%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+    text-align: start;
+}
+.btn_send_block{
+    text-align: right;
+    padding-bottom: 5px;
+}
+.error_message{
+    position: absolute;
+    bottom: 5px;
+    color: red;
+    font-size: small;
+    left: 25px;
+
+    @media(max-width: 600px){
+        left: 20px;
+    }
 }

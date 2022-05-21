@@ -1,12 +1,14 @@
 import axios from 'axios'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { FormSend } from '../components/one_post-page/FormSend'
 import { OneComment } from '../components/one_post-page/OneComment'
 import { getComments, getOnePost } from '../redux/postsSlice'
 import { setUserReload } from '../redux/usersSlice'
 import s from '../scss/onePostPage.module.scss'
 export const OnePostPage = () => {
     const dispatch = useDispatch()
+    const [ isForm, setIsForm] = useState<boolean>(false)
     const { user, loadData } = useSelector((state:any)=> state.users)
     const { onePost, comments } = useSelector((state:any)=> state.posts)
     let urlElements = window.location.pathname.split('/')
@@ -28,6 +30,8 @@ export const OnePostPage = () => {
             dispatch(getComments(elem.data))
     )}, [])
     
+        //button post 
+
   return (
     <div className={s.main}>
         <div className={s.main_wrap}>
@@ -48,7 +52,13 @@ export const OnePostPage = () => {
                     }
                 </div>
             </div>
-        </div> 
+            <div className={s.comment_block_btn}>
+                <div onClick={()=>setIsForm(!isForm)} className={s.comment_button}><span>Добавить комментарий</span></div>
+            </div>
+
+            {isForm ? <FormSend urlElelement={urlElelement} setIsForm={setIsForm} isForm={isForm}/> 
+            : <></>}
+          </div> 
     </div>
   )
 }
