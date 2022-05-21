@@ -1,0 +1,87 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.main_wrap{
+    height: 100%;
+    width: 90%;
+    min-height: 80vh;
+    margin-top: 25px;
+}
+.block_info_user{
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+}
+.block_posts{
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block_posts_wrap{
+    width: 70%;
+    height: 100%;
+    min-height: 150px;
+    box-shadow: 0px 0px 3px gray;
+    @media(max-width:630px){
+        width: 90%;
+    }
+}
+.block_post_title{
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: capitalize;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    span{
+        width: 90%;
+    }
+}
+.block_post_body{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    span{
+        width: 90%;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        /* or 142% */
+    
+    
+        color: rgba(0, 0, 0, 0.61);
+    }
+}
+.block_comments{
+    margin-top: 30px;
+}
+.block_comments_title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 23px;
+    text-transform: capitalize;
+}
+
+
+// comments
+.main_comment{
+    margin: 10px;
+    box-shadow: 0px 0px 3px gray;
+}

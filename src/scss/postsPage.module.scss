@@ -1,0 +1,119 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_wrap{
+    margin-top: 15px;
+    height: 100%;
+    width: 90%;
+    margin-bottom: 80px;
+    @media(max-width:1000px){
+        margin-bottom: 120px;
+    }
+    @media(max-width:680px){
+       margin-bottom: 400px;
+    }
+}
+.block_name{
+    font-size: large;
+    height: 25px;
+    width: 100%;
+    color: black;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+}
+.container_posts{
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    row-gap: 2%;
+    @media(max-width:1000px){
+        grid-template-columns: 49% 49%;
+    }
+    @media(max-width:680px){
+        grid-template-columns: 100%;
+        column-gap: 0px;
+        margin-top: 60px;
+    }
+}
+.temp_post_main{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    min-width: 300px;
+}
+.temp_post_main_wrap{
+    height: 90%;
+    width: 90%;
+    position: relative;
+}
+.temp_post_title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+    text-align: start;
+}
+.temp_post_body{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    top: 46%;
+    line-height: 17px;
+    text-align: start;
+    /* or 142% */
+    height: 20px;
+    overflow: hidden;
+
+    color: rgba(0, 0, 0, 0.41);
+}
+.temp_post_more{
+    position: absolute;
+    top: 51%;
+    left: 0px;
+    font-size: x-large;
+}
+.temp_button_post{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+    background: #101010;
+    border: 1px solid #0D1E4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 176px;
+    height: 34px;
+    span{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        color: #FFFFFF;
+    }
+}

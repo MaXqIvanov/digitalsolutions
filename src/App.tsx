@@ -7,6 +7,8 @@ import { UserPage } from './pages/UserPage';
 import axios from 'axios';
 import { getUsers } from './redux/usersSlice';
 import { useDispatch } from 'react-redux';
+import { PostsPage } from './pages/PostsPage';
+import { OnePostPage } from './pages/OnePostPage';
 
 function App() {
   const dispatch = useDispatch();
@@ -42,6 +44,7 @@ function App() {
           element={
             <div className="template_pages">
               <Header />
+              <PostsPage />
             </div>
           }
         />
@@ -51,6 +54,7 @@ function App() {
           element={
             <div className="template_pages">
               <Header />
+              <OnePostPage />
             </div>
           }
         />

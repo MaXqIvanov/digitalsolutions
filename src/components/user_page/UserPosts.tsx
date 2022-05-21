@@ -29,7 +29,7 @@ export const UserPosts = () => {
                     <span className={s.post_more}>...</span>
                 </div>
             </div>)  : <div>Постов нет</div>}
-            <div onClick={()=>navPosts('/posts')} className={s.view_allPosts}><span>Посмотреть все</span></div>
+            <div onClick={()=>navPosts(`/posts?userId=${user?.id}`)} className={s.view_allPosts}><span>Посмотреть все</span></div>
         </div>
     </div>
   )
